@@ -481,6 +481,7 @@ div#step3-finalpricediv2 {
 	text-align: right;
 	padding-right: 5px;
 	right: 0px;
+	border-radius: 3px;
 	/*border-radius: 5px;*/
 	background: rgba(23, 164, 24, 0.7);
 	background: -webkit-linear-gradient(right, rgba(23, 164, 24, 0.7) , transparent);
@@ -574,6 +575,32 @@ div.auctionWrapper {
 	padding-bottom: 20px;
 	height: 100%;
 }
+div#profileWrapper {
+	height: 100%;
+}
+div#prof-info {
+	padding-top: 40px;
+}
+div#prof-entriesdiv {
+	padding-top: 40px;
+}
+div#entriestbl {
+	overflow-y: scroll;
+	height: 300px;
+}
+img#profile-userimg {
+	height: 80px;
+	border-radius: 40px;
+}
+div#settingsWrapper {
+	height: 100%;
+}
+div#settingstitle {
+	padding-top: 30px;
+}
+a#tradeurl-help:hover {
+	cursor: pointer;
+}
 
 /*footer*/
 a.footerbtn{
@@ -643,4 +670,74 @@ p.tabname-big {
 .btn-box {
 	padding-left: 3px !important;
 	padding-right: 3px !important;
+}
+.white-tbl {
+	background-color: rgba(255, 255, 255, 0.9) !important;
+	border-radius: 3px !important;
+}
+
+/* html overflow */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.79);
+}
+html::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* .table-overflow overflow */
+.table-overflow::-webkit-scrollbar {
+    width: 5px;
+}
+.table-overflow::-webkit-scrollbar-track {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.table-overflow::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.modbadge {
+	height: 25px;
+	width: 25px;
+	border-radius: 18px;
+	position: absolute;
+	background-color: #00c2ff;
+	margin-top: 13px;
+	margin-left: 2px;
+}
+.staffbadge {
+	height: 25px;
+	width: 25px;
+	border-radius: 18px;
+	position: absolute;
+	background-color: #ffd600;
+	margin-top: 13px;
+	margin-left: 2px;
+}
+.devbadge {
+	height: 25px;
+	width: 25px;
+	border-radius: 18px;
+	position: absolute;
+	background-color: #777777;
+	margin-top: 13px;
+	margin-left: 2px;
+}
+.badgetxt {
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif !important;
+	margin-top: 4px;
+}
+.txtdev {
+	margin-top: 0px !important;
+	font-size: 0.5em !important;
 }

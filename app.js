@@ -10,6 +10,8 @@ var index = require('./routes/index')
 var deposit = require('./routes/deposit')
 var about = require('./routes/about')
 var auction = require('./routes/auction')
+var profile = require('./routes/profile')
+var settings = require('./routes/settings')
 
 var app = express()
 
@@ -37,6 +39,8 @@ app.use('/', index)
 app.use('/deposit', deposit)
 app.use('/about', about)
 app.use('/auction', auction)
+app.use('/profile', profile)
+app.use('/settings', settings)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
