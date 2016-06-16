@@ -297,7 +297,8 @@ div#recentdeal1, div#recentdeal2 {
 .boxworth-txt {
 	font-size: 15px;
 	margin: 0px !important;
-	padding-left: 5px;
+	padding-right: 10px;
+	padding-top: 2px;
 }
 p.tabname {
 	white-space: nowrap;
