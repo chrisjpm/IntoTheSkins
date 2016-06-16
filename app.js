@@ -12,6 +12,8 @@ var about = require('./routes/about')
 var auction = require('./routes/auction')
 var profile = require('./routes/profile')
 var settings = require('./routes/settings')
+var support = require('./routes/support')
+var submitticket = require('./routes/submitticket')
 
 var app = express()
 
@@ -41,6 +43,8 @@ app.use('/about', about)
 app.use('/auction', auction)
 app.use('/profile', profile)
 app.use('/settings', settings)
+app.use('/support', support)
+app.use('/submitticket', submitticket)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

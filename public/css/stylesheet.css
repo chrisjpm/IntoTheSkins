@@ -231,7 +231,7 @@ div#recentdeal1, div#recentdeal2 {
 	padding-right: 30px;
 }
 .ftaucbid-txt, .aucbid-txt-aucp {
-	font-size: 20px;
+	font-size: 14px;
 }
 .ftboxitem {
 	height: 30%;
@@ -450,7 +450,7 @@ img#step2-img1, img#step2-img2, img#step2-img3 {
 div#step2-img1-bidtxt, div#step2-img2-bidtxt, div#step2-img3-bidtxt {
 	height: 20px;
 	font-family: 'Nunito', sans-serif !important;
-	font-size: 10px;
+	font-size: 12px;
 	display: block;
 	padding-top: 2px;
 	text-align: center;
@@ -520,11 +520,13 @@ img#imgtest5, img#imgtest6, img#imgtest7, img#imgtest8, img#imgtest9, img#imgtes
 	width: 80%;
 }
 div#depositContainer {
-	height: 100%;
 	padding-top: 30px;
 }
 div#depositWrapper {
 	padding-bottom: 15px;
+}
+.invrow {
+	padding-bottom: 30px;
 }
 div.inv-box {
 	pading: 0 !important;
@@ -595,11 +597,14 @@ img#profile-userimg {
 div#settingsWrapper {
 	height: 100%;
 }
-div#settingstitle {
+div#settingstitle, div#supporttitle, div#supporttitle2 {
 	padding-top: 30px;
 }
 a#tradeurl-help:hover {
 	cursor: pointer;
+}
+a#a-submitticket {
+	margin-top: -7px;
 }
 
 /*footer*/
@@ -740,4 +745,19 @@ html::-webkit-scrollbar-thumb {
 .txtdev {
 	margin-top: 0px !important;
 	font-size: 0.5em !important;
+}
+.a-orange {
+	color: rgb(193, 97, 0) !important;
+}
+.a-grey {
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+.a-lg {
+	color: rgb(205, 250, 140) !important;
+}
+.card-lrgrad-title {
+	border-radius: 10px 10px 0 0 !important;
+}
+.card-lrgrad-cont {
+	border-radius: 0 0 10px 10px !important;
 }
