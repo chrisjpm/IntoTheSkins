@@ -681,6 +681,59 @@ p.tabname-big {
 	background-color: rgba(255, 255, 255, 0.9) !important;
 	border-radius: 3px !important;
 }
+.chatbtnWrapper {
+	padding-left: 4.5%;
+	bottom: 30px;
+	position: fixed;
+}
+.chatbtn {
+	height: 60px !important;
+	width: 60px !important;
+	border-radius: 30px !important;
+	display: block;
+	padding: 0 !important;
+}
+.chaticon {
+	font-size: 1.5em !important;
+	margin-top: 11px;
+}
+.chatContainer {
+	height: 70%;
+	width: 13%;
+	margin-left: 10px;
+	top: 80px;
+	position: fixed;
+	display: block;
+	border-radius: 12px;
+	background-color: #fff;
+	overflow-y: scroll;
+}
+.commentWrapper {
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+.chat-profpic {
+	width: 15%;
+}
+.chat-profpic-img {
+	width: 100%;
+	border-radius: 50%;
+}
+.chat-name {
+	width: 80%;
+	white-space: nowrap;
+  	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-top: 3px;
+}
+.chat-msg {
+	width: 100%;
+	padding-top: 16px;
+}
+
 
 /* html overflow */
 html::-webkit-scrollbar {
@@ -695,7 +748,10 @@ html::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
+/* chat */
+.chatContainer::-webkit-scrollbar {
+    width: 0;
+}
 
 /* .table-overflow overflow */
 .table-overflow::-webkit-scrollbar {
@@ -711,6 +767,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.3);
 }
+
 .modbadge {
 	height: 25px;
 	width: 25px;
@@ -720,7 +777,7 @@ html::-webkit-scrollbar-thumb {
 	margin-top: 13px;
 	margin-left: 2px;
 }
-.adminbadge {
+.staffbadge {
 	height: 25px;
 	width: 25px;
 	border-radius: 18px;

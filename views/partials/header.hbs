@@ -1,3 +1,6 @@
+{{>freecoinsmodal}}
+{{>privateinvmodal}}
+
 <div class="navbar-fixed">
 	<ul id="user-navbardropdown" class="dropdown-content">
 		<li><a href="/Profile">My Profile</a></li>
@@ -10,10 +13,11 @@
 			<div class="container">
 				<a href="/" class="brand-logo center"><img id="logo" src="imgs/logo.png" /></a>
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li class="left"><a href="/deposit">Deposit</a></li>
-					<li class="left"><a href="/support">Support</a></li>
-					<li class="left"><a href="#">Donate</a></li>
-					<li class="left"><a href="/about">About</a></li>
+					<li class="left"><a class="waves-effect waves-teal" href="/deposit">Deposit</a></li>
+					<li class="left"><a class="waves-effect waves-teal" href="/support">Support</a></li>
+					<li class="left"><a class="waves-effect waves-teal" href="#">Donate</a></li>
+					<li class="left"><a class="waves-effect waves-teal" href="/about">About</a></li>
+					<li class="left"><a class="waves-effect waves-teal modal-trigger" href="#freecoins">Free Coins!</a></li>
 				</ul>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<!--Login <li>
@@ -21,13 +25,7 @@
 					</li> -->
 					<img class="left" id="header-userimg" src="/imgs/user.png" /> <!-- user prof pic-->
 					<li><a class="dropdown-button" href="" data-activates="user-navbardropdown">[username]<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li>Wallet: 10<i class="large material-icons tinyer right">fiber_smart_record</i></li>
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li><a href="#">Deposit</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#" class="green-text text-accent-3">Login with Steam&nbsp;<img id="steamlogin" src="imgs/steamicon.png" /></a></li>
+					<li>Wallet: 10<i class="material-icons tinyer right">fiber_smart_record</i></li>
 				</ul>
 			</div>
 		</div>

@@ -14,9 +14,7 @@ $(document).ready(function() {
 	$('.collapsible').collapsible({
       accordion : false
     });
-	$(document).ready(function(){
-	  $('.tooltipped').tooltip({delay: 50});
-	});
+	$('.tooltipped').tooltip({delay: 50});
 	$('select').material_select();
 	$('.modal-trigger').leanModal();
 });
