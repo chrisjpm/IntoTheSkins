@@ -834,14 +834,18 @@ html::-webkit-scrollbar-thumb {
 	color: rgb(205, 250, 140) !important;
 }
 .card-lrgrad-title {
-	border-radius: 10px 10px 0 0 !important;
+	border-radius: 6px 6px 0 0 !important;
 }
 .card-lrgrad-cont {
-	border-radius: 0 0 10px 10px !important;
+	border-radius: 0 0 6px 6px !important;
 }
 .waves-effect.waves-lblue .waves-ripple {
 	background-color: rgba(72, 92, 121, 0.95);
 }
 .btn100 {
 	width: 100%;
+}
+.card-title {
+	padding: 4px;
+	font-size: 1.2rem !important;
 }
