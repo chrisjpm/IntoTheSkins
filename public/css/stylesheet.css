@@ -607,6 +607,20 @@ a#tradeurl-help:hover {
 a#a-submitticket {
 	margin-top: -7px;
 }
+div#ticketsWrapper {
+	height: 100%;
+}
+div#openticketsWrapper, div#closedticketsWrapper {
+	height: 30%;
+	overflow-y: scroll;
+}
+div#viewticketWrapper {
+	padding-top: 30px;
+}
+div#viewticketContainer {
+	height: 300%;
+}
+
 
 /*footer*/
 a.footerbtn{
@@ -624,6 +638,7 @@ img#footer-logo {
 	margin-top: -10px;
 }
 
+
 /*classes*/
 .hide {
 	visibility: none;
@@ -636,7 +651,7 @@ img#footer-logo {
    text-overflow: ellipsis;
    display: -webkit-box;
    -webkit-box-orient: vertical;
-   -webkit-line-clamp: 6; /* number of lines to show */
+   -webkit-line-clamp: 10; /* number of lines to show */
    line-height: 20px;        /* fallback */
    max-height: 120px;       /* fallback */
 }
@@ -753,6 +768,11 @@ html::-webkit-scrollbar-thumb {
     width: 0;
 }
 
+/* ticketsWrapper */
+#openticketsWrapper::-webkit-scrollbar, #closedticketsWrapper::-webkit-scrollbar {
+    width: 0;
+}
+
 /* .table-overflow overflow */
 .table-overflow::-webkit-scrollbar {
     width: 5px;
@@ -818,4 +838,10 @@ html::-webkit-scrollbar-thumb {
 }
 .card-lrgrad-cont {
 	border-radius: 0 0 10px 10px !important;
+}
+.waves-effect.waves-lblue .waves-ripple {
+	background-color: rgba(72, 92, 121, 0.95);
+}
+.btn100 {
+	width: 100%;
 }
