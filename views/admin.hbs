@@ -1,0 +1,159 @@
+<div class="container white-text" id="adminWrapper">
+
+	<!-- Money Panel-->
+	<div id="chartpanel">
+		<div id="profit" class="firstchart">
+			<h5 class="white-text text-accent-2">Profits</h5>
+			<div class="input-field">
+				<i class="material-icons prefix">today</i>
+				<input type="date" class="datepicker" placeholder="Choose date for the following 7 days' data.">
+			</div>
+			<canvas id="chartprofit" class="chartsize"></canvas>
+		</div>
+
+		<div id="userdeposit" class="chartarea">
+			<h5 class="white-text text-accent-2">Deposits</h5>
+			<div class="input-field">
+				<i class="material-icons prefix">today</i>
+				<input type="date" class="datepicker" placeholder="Choose date for the following 7 days' data.">
+			</div>
+			<canvas id="chartuserdeposit" class="chartsize"></canvas>
+		</div>
+
+		<div id="withdraw" class="chartarea">
+			<h5 class="white-text text-accent-2">Bots</h5>
+			<a class="waves-effect waves-light btn light-blue darken-3 chartsize" id="withdrawfrombot"><span>Withdraw skins from all bots<i class="material-icons left">play_for_work</i></span></a>
+			<a class="waves-effect waves-light btn light-blue darken-4 chartsize" id="addtobot" style="margin-top: 10px;"><span>Add skin to empty bot<i class="material-icons left">compare_arrows</i></span></a>
+			<div class="row">
+				<div class="input-field col s4">
+					<input placeholder="Enter Skin" id="enter_skin" type="text" class="validate white-text">
+				</div>
+				<div class="input-field col s2">
+					<input placeholder="Enter Bot #" id="enter_bot" type="number" class="validate white-text">
+				</div>
+				<div class="col s3">
+					<a class="waves-effect waves-light btn light-blue darken-3 btn100" id="withdrawfrombot-specific" style="margin-top: 20px;"><span>Withdraw</span></a>
+				</div>
+				<div class="col s3">
+					<a class="waves-effect waves-light btn light-blue darken-4 btn100" id="addtobot-specific" style="margin-top: 20px;"><span>Add</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="users" class="chartarea">
+			<h5 class="white-text text-accent-2">Users</h5>
+			<div class="input-field col s12">
+				<i class="material-icons prefix">toll</i>
+				<input placeholder="Enter coin minimum to unlock chat" id="chat_coins" type="number" class="validate white-text">
+			</div>
+			<div class="input-field col s12">
+				<i class="material-icons prefix">supervisor_account</i>
+				<input placeholder="Enter SteamID" id="search_users" type="text" class="validate white-text">
+			</div>
+			<table class="centered users-table">
+		        <thead class="admin-th">
+		          <tr id="adminusertitle" class="light-blue lighten-2 text-accent-2">
+		              <th data-field="user_id">Name</th>
+		              <th data-field="online">Online/Offline</th>
+					  <th data-field="coins">Edit Coins</th>
+		              <th data-field="mod">Toggle Mod</th>
+					  <th data-field="ban">Toggle Ban</th>
+		          </tr>
+		        </thead>
+
+		        <tbody id="adminuserbody">
+		          <tr id="registeredusers">
+		            <a href=""><td><div><img id="table-prof-pic" src="/imgs/user.png"><strong>User 1</strong></td></a>
+		            <td><strong id="useronline">ONLINE</strong></td>
+					<td>
+						<div class="input-field">
+							<input placeholder="[current_coins_var]" id="edit_coins" type="text" class="center validate white-text">
+						</div>
+					</td>
+					<td>
+						<input type="checkbox" class="filled-in filled-in-mod" id="moduser1" checked="checked" />
+						<label for="moduser1"></label>
+					</td>
+					<td>
+						<input type="checkbox" class="filled-in filled-in-ban" id="banuser1" checked="checked" />
+						<label for="banuser1"></label>
+					</td>
+		          </tr>
+
+				  <tr id="registeredusers">
+		            <a href=""><td><div><img class="z-depth-3" id="table-prof-pic" src="/imgs/user.png"><strong>User 2</strong></td></a>
+		            <td>OFFLINE</td>
+					<td>
+						<div class="input-field">
+							<input placeholder="[current_coins_var]" id="edit_coins" type="text" class="center validate white-text">
+						</div>
+					</td>
+					<td>
+						<input type="checkbox" class="filled-in filled-in-mod" id="moduser2"/>
+						<label for="moduser2"></label>
+					</td>
+					<td>
+						<input type="checkbox" class="filled-in filled-in-ban" id="banuser2"/>
+						<label for="banuser2"></label>
+					</td>
+		          </tr>
+		        </tbody>
+		      </table>
+		</div>
+	</div>
+
+	<!-- Tabs -->
+	<div id="chartsTabs" class="hide-on-med-and-down">
+		<ul class="tabs">
+			<li class="tab"><a class="active light-blue-text" href="" id="moneytabs">Money</a></li>
+			<li class="tab"><a class="light-blue-text" href="" id="usertabs">Users</a></li>
+		</ul>
+
+		<!-- Money -->
+		<a href="#"> <!-- brings to top of page -->
+			<div id="profittab" class="card blue darken-1 cardsize waves-effect">
+				<div class="card-content white-text">
+					<img class="tabimg right" src="/imgs/profit.png"/>
+					<h6>Daily Profit</h6>
+					<p><strong class="summarytxt">$abc</strong></p>
+		  		 </div>
+			</div>
+		</a>
+
+		<a href="#userdeposit">
+			<div id="deposittab" class="card red darken-1 cardsize waves-effect waves-red">
+			  	<div class="card-content white-text">
+					<img class="tabimg right" src="/imgs/deposit.png"/>
+					<h6>Daily User Deposit</h6>
+					<p><strong class="summarytxt">$def</strong></p>
+			  	</div>
+			</div>
+		</a>
+
+		<a href="#withdraw">
+			<div id="withdrawtab" class="card green darken-1 cardsize waves-effect waves-green">
+				<div class="card-content white-text">
+					<img class="tabimg right" src="/imgs/withdraw.png"/>
+					<h6>Withdraw Skins</h6>
+					<p><strong class="summarytxt">$ghi</strong></p>
+				 </div>
+			</div>
+		</a>
+
+		<!-- Users -->
+		<a href="#users"> <!-- brings to top of page -->
+			<div id="usertab" class="card blue darken-1 cardsize waves-effect">
+				<div class="card-content white-text">
+					<img class="tabimg right" src="/imgs/user-grey.png"/>
+					<h6>Users</h6>
+					<p><strong class="summarytxt">$xyz</strong></p>
+		  		 </div>
+			</div>
+		</a>
+	</div>
+</div>
+
+<script type="text/javascript" src="/js/adminpage.js"></script>
+<script type="text/javascript" src="/js/chartprofit.js"></script>
+<script type="text/javascript" src="/js/chartdeposit.js"></script>
+<!-- Resize for mobile -->

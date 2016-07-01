@@ -1,5 +1,4 @@
-{{>freecoinsmodal}}
-{{>privateinvmodal}}
+{{>freecoinsmodal}} {{>privateinvmodal}}
 
 <div class="navbar-fixed">
 	<ul id="user-navbardropdown" class="dropdown-content">
@@ -22,10 +21,28 @@
 					<!--Login <li>
 						<a href="#" class="waves-effect waves-green btn grey darken-3 green-text text-accent-3">Login with Steam&nbsp;<img id="steamlogin" src="imgs/steamicon.png" /></a>
 					</li> -->
-					<img class="left" id="header-userimg" src="/imgs/user.png" /> <!-- user prof pic-->
+					<img class="left" id="header-userimg" src="/imgs/user.png" />
+					<!-- user prof pic-->
 					<li><a class="dropdown-button" href="" data-activates="user-navbardropdown">[username]<i class="material-icons right">arrow_drop_down</i></a></li>
 					<li>Wallet: 10<i class="material-icons tinyer right">fiber_smart_record</i></li>
 				</ul>
+
+				<ul id="slide-out" class="side-nav grey darken-3">
+					<h6 class="light-blue-text sidebar-title">NAVIGATION</h6>
+					<li><a class="white-text" href="/deposit">Deposit<i class="material-icons right tinyer">compare_arrows</i></a></li>
+					<li><a class="white-text" href="/support">Support<i class="material-icons right tinyer">question_answer</i></a></li>
+					<li><a class="white-text" href="/about">About<i class="material-icons right tinyer">info_outline</i></a></li>
+					<li><a class="white-text modal-trigger" href="#freecoins">Free Coins!<i class="material-icons right tinyer">fiber_smart_record</i></a></li>
+
+					<h6 class="green-text darken-2 sidebar-title">INFORMATION</h6>
+					<li><a href="/about#peopleWrapper" class="white-text">Staff<i class="material-icons right tinyer">people_outline</i></a></li>
+					<li><a href="#termsofservice" class="white-text modal-trigger">Terms of Service<i class="material-icons right tinyer">format_align_justify</i></a></li>
+					<li><a href="/#rd1-finalpricediv" class="white-text">How to Play<i class="material-icons right tinyer">help_outline</i></a></li>
+					<li><a href="https://steamcommunity.com/groups/Intotheskins" class="white-text">Steam Group&nbsp;<img id="steamlogin" src="imgs/steamicon.png" /></a></li>
+					<li><a href="https://twitter.com/intotheskins" class="white-text">Twitter&nbsp;<img id="twitterpage" src="imgs/twitterpage.png" /></a></li>
+
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 			</div>
 		</div>
 	</nav>

@@ -16,6 +16,7 @@ var support = require('./routes/support')
 var submitticket = require('./routes/submitticket')
 var tickets = require('./routes/tickets')
 var viewticket = require('./routes/viewticket')
+var admin = require('./routes/admin')
 
 var app = express()
 
@@ -49,6 +50,7 @@ app.use('/support', support)
 app.use('/submitticket', submitticket)
 app.use('/tickets', tickets)
 app.use('/viewticket', viewticket)
+app.use('/admin', admin)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

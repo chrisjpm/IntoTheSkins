@@ -11,6 +11,23 @@ html, body {
 	font-family: 'Arimo', sans-serif;
 	z-index: 0;
 }
+div.mobilemsgWrapper {
+	height: 100%;
+}
+div.mobilemsg {
+	margin-left: 5%;
+	margin-right: 5%;
+	border: solid 3px #fff;
+	border-radius: 10px;
+}
+p.mobilemsg-p {
+	padding: 7px;
+	font-family: 'Nunito', sans-serif;
+}
+.sidebar-title {
+	padding-left: 20px;
+	padding-top: 10px;
+}
 img#logo {
 	height: 54px;
 	margin-top: 2px;
@@ -22,6 +39,10 @@ img#steamlogin,img#steamgroup {
 img#twitterpage {
 	padding-top: 7px;
 	height: 20px;
+}
+img#steamlogin-sb, img#twitterpage-sb {
+	height: 20px;
+	display: block;
 }
 img#header-userimg {
 	height: 30px;
@@ -521,10 +542,15 @@ img#imgtest5, img#imgtest6, img#imgtest7, img#imgtest8, img#imgtest9, img#imgtes
 	width: 80%;
 }
 div#depositContainer {
+	height: 200%;
 	padding-top: 30px;
 }
 div#depositWrapper {
 	padding-bottom: 15px;
+}
+div#deposit-inventory, div#deposit-submit {
+	overflow-y: scroll;
+	height: 600px;
 }
 .invrow {
 	padding-bottom: 30px;
@@ -539,10 +565,9 @@ img#csgoanalyst {
 	height: 35px;
 	margin-top: -10px;
 }
-
 div#logoWrapper, div#aboutWrapper, div#peopleWrapper {
 	padding-top: 60px;
-	height: 100%;
+	padding-bottom: 115px;
 }
 div#peopleWrapper {
 	margin-bottom: 200px;
@@ -598,8 +623,16 @@ img#profile-userimg {
 div#settingsWrapper {
 	height: 100%;
 }
+div#supportWrapper {
+	height: 300%;
+	bottom: 0;
+}
+div#faqcontainer {
+	height: 600px;
+	overflow-y: scroll !important;
+}
 div#settingstitle, div#supporttitle, div#supporttitle2 {
-	padding-top: 30px;
+	padding-top: 20px;
 }
 a#tradeurl-help:hover {
 	cursor: pointer;
@@ -773,16 +806,16 @@ html::-webkit-scrollbar-thumb {
     width: 0;
 }
 
-/* .table-overflow overflow */
-.table-overflow::-webkit-scrollbar {
+/* .table-overflow, depositWrapper, faqcontainer overflow */
+.table-overflow::-webkit-scrollbar, #faqcontainer::-webkit-scrollbar, #deposit-inventory::-webkit-scrollbar, #deposit-submit::-webkit-scrollbar {
     width: 5px;
 }
-.table-overflow::-webkit-scrollbar-track {
+.table-overflow::-webkit-scrollbar-track, #faqcontainer::-webkit-scrollbar-track, #deposit-inventory::-webkit-scrollbar-track, #deposit-submit::-webkit-scrollbar-track {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.2);
 }
-.table-overflow::-webkit-scrollbar-thumb {
+.table-overflow::-webkit-scrollbar-thumb, #faqcontainer::-webkit-scrollbar-thumb, #deposit-inventory::-webkit-scrollbar-thumb, #deposit-submit::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: rgba(255, 255, 255, 0.3);
@@ -848,4 +881,127 @@ html::-webkit-scrollbar-thumb {
 .card-title {
 	padding: 4px;
 	font-size: 1.2rem !important;
+}
+
+/* Admin */
+
+div#adminWrapper {
+    height: 100%;
+    bottom: 0;
+}
+div#chartpanel {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+div#chartsTabs {
+    position: fixed;
+    float: right !important;
+    right: 10%;
+    width: 20%;
+    height: 100%;
+    margin-top: 80px;
+}
+.tabs {
+    overflow-x: hidden !important;
+}
+.collection {
+    background-color: rgba(255, 255, 255, .02) !important;
+    border: transparent !important;
+    outline: transparent !important;
+    border-radius: 7px !important;
+}
+.collection-item {
+    background-color: rgba(255, 255, 255, .02) !important;
+    border: transparent !important;
+}
+.chartsize {
+    width: 100%;
+    height: 100%;
+}
+.firstchart {
+    padding-top: 52px;
+    padding-bottom: 50%;
+}
+.chartarea {
+    padding-top: 115px;
+    padding-bottom: 200%;
+}
+.cardtitle {
+    height: 60px;
+}
+.adminhtml {
+	background-image: url('../imgs/white.jpg') !important;
+}
+.adminsmall {
+    color: #80d8ff !important;
+}
+h5#admintitle {
+    margin-top: -4px;
+}
+div#admintitle {
+    width: 75%;
+    margin-left: 15%;
+    position: fixed;
+    z-index: 1001;
+}
+strong.summarytxt {
+    font-size: 1.3em;
+}
+img.tabimg {
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+.cardsize {
+    width: 100%;
+}
+tbody#adminuserbody {
+    color: #a19e9e;
+}
+strong#useronline {
+    color: #3ccbeb !important;
+}
+[type="checkbox"].filled-in-mod:not(:checked)+label:after {
+    border: 2px solid #a19e9e !important;
+}
+[type="checkbox"].filled-in-mod:checked+label:after {
+    border: 2px solid #3ccbeb !important;
+    background-color: #3ccbeb !important;
+}
+[type="checkbox"].filled-in-ban:not(:checked)+label:after {
+    border: 2px solid #1cbd28 !important;
+}
+[type="checkbox"].filled-in-ban:checked+label:after {
+    border: 2px solid #eb3c3c !important;
+    background-color: #eb3c3c !important;
+}
+img#table-prof-pic {
+    height: 25px;
+    width: 25px;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-bottom: -7px;
+}
+strong#statsprofit {
+    color: #00e676 !important;
+}
+div#withdrawwrapper {
+    height: 100%;
+}
+th {
+	border-radius: 0 !important;
+}
+.indicator {
+	background-color: rgb(0, 133, 255) !important;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: transparent;
+	width: 0;
+}
+ul.tabs {
+	background-color: transparent;
 }

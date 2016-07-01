@@ -5,6 +5,7 @@
 
   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" />
+		<link rel='stylesheet' href='/css/animate.css'>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
@@ -17,18 +18,30 @@
   <body>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
 		<script src="js/initial.js"></script>
 		<script src="/js/aboutscroller.js"></script>
 		<script src="/js/togglechat.js"></script>
+		<script type="text/javascript" src="/js/adminpage.js"></script>
+		<script type="text/javascript" src="/js/chartprofit.js"></script>
+		<script type="text/javascript" src="/js/chartdeposit.js"></script>
 
+		<div class="hide-on-med-and-up mobilemsgWrapper valign-wrapper">
+			<div class="mobilemsg">
+				<p class="flow-text white-text valign center-align mobilemsg-p">
+					Please use our site on a tablet or desktop for a much better user experience!
+				</p>
+			</div>
+		</div>
 
-		{{>header}}
+		<div class="hide-on-small-and-down">
+			{{>header}}
 
-    	{{{body}}}
+	    	{{{body}}}
 
-		{{>chat}}
+			{{>chat}}
+		</div>
 
-		{{>footer}}
   </body>
 </html>
