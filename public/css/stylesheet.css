@@ -601,11 +601,11 @@ div#auctionContainer {
 div.auctionWrapper {
 	padding-top: 60px;
 	padding-bottom: 20px;
-	height: 100%;
+	/*height: 100%;*/
 }
-div#profileWrapper {
+/*div#profileWrapper {
 	height: 100%;
-}
+}*/
 div#prof-info {
 	padding-top: 40px;
 }
@@ -620,13 +620,13 @@ img#profile-userimg {
 	height: 80px;
 	border-radius: 40px;
 }
-div#settingsWrapper {
+/*div#settingsWrapper {
 	height: 100%;
-}
-div#supportWrapper {
+}*/
+/*div#supportWrapper {
 	height: 300%;
 	bottom: 0;
-}
+}*/
 div#faqcontainer {
 	height: 600px;
 	overflow-y: scroll !important;
@@ -640,9 +640,9 @@ a#tradeurl-help:hover {
 a#a-submitticket {
 	margin-top: -7px;
 }
-div#ticketsWrapper {
+/*div#ticketsWrapper {
 	height: 100%;
-}
+}*/
 div#openticketsWrapper, div#closedticketsWrapper {
 	height: 30%;
 	overflow-y: scroll;
@@ -912,6 +912,12 @@ div#chartsTabs {
     outline: transparent !important;
     border-radius: 7px !important;
 }
+.collection-about {
+    background-color: rgb(255, 255, 255) !important;
+    border: transparent !important;
+    outline: transparent !important;
+    border-radius: 7px !important;
+}
 .collection-item {
     background-color: rgba(255, 255, 255, .02) !important;
     border: transparent !important;
@@ -987,9 +993,9 @@ img#table-prof-pic {
 strong#statsprofit {
     color: #00e676 !important;
 }
-div#withdrawwrapper {
+/*div#withdrawwrapper {
     height: 100%;
-}
+}*/
 th {
 	border-radius: 0 !important;
 }
