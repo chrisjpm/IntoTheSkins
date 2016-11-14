@@ -568,6 +568,7 @@ img#csgoanalyst {
 div#logoWrapper, div#aboutWrapper, div#peopleWrapper {
 	padding-top: 60px;
 	padding-bottom: 115px;
+	height: 100%;
 }
 div#peopleWrapper {
 	margin-bottom: 200px;
@@ -620,9 +621,9 @@ img#profile-userimg {
 	height: 80px;
 	border-radius: 40px;
 }
-/*div#settingsWrapper {
+div#settingsWrapper {
 	height: 100%;
-}*/
+}
 /*div#supportWrapper {
 	height: 300%;
 	bottom: 0;
