@@ -1,0 +1,502 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none;
+}
+
+html, body {
+	height: 100%;
+	background-image: url('../imgs/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Arimo', sans-serif;
+	z-index: 0;
+}
+img#logo {
+	height: 54px;
+	margin-top: 2px;
+}
+img#steamlogin,img#steamgroup {
+	height: 20px;
+	padding-top: 5px;
+}
+img#twitterpage {
+	padding-top: 7px;
+	height: 20px;
+}
+img#header-userimg {
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+div#welcomeContainer {
+	margin-top: 20px;
+	height: calc(100% - 90px);
+	top: 0;
+	bottom: 0;
+	position: relative;
+}
+div#tophalfwelcome {
+	height: 50%;
+	position: relative;
+}
+a#readmorebtn {
+	width: 100%;
+}
+div#recentdealsdiv {
+	height: 100%;
+	width: 63%;
+}
+div#recentdeal1, div#recentdeal2 {
+	position: relative;
+	border-radius: 5px;
+	width: 48%;
+	height: 96%;
+}
+.boxtitle-div {
+	border-radius: 5px;
+	width: 100%;
+    background: rgb(147, 63, 154);
+    /*background: -webkit-linear-gradient(left, rgb(147, 63, 154) , transparent); *Colour of weapon grade*
+    background: -o-linear-gradient(right, rgb(147, 63, 154) , transparent);
+    background: -moz-linear-gradient(right, rgb(147, 63, 154) , transparent);
+    background: linear-gradient(to right, rgb(147, 63, 154) , transparent);*/
+}
+.boxsubtitle-div {
+	border-radius: 5px;
+	width: 100%;
+	background: rgb(72, 13, 77);
+    background: -webkit-linear-gradient(top, rgb(72, 13, 77) , transparent); /* *Colour of weapon grade* */
+    background: -o-linear-gradient(bottom, rgb(72, 13, 77) , transparent);
+    background: -moz-linear-gradient(bottom, rgb(72, 13, 77) , transparent);
+    background: linear-gradient(to bottom, rgb(72, 13, 77) , transparent);
+}
+.boxtitle-txt {
+	font-size: 18px;
+	padding-left: 5px;
+}
+.boxsubtitle-txt {
+	font-size: 11px;
+	padding-left: 5px;
+}
+.boxcontent {
+	height: 62%;
+	width: 100%;
+	position: relative;
+	background: rgba(0,0,0,0.5);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) , transparent);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.5) , transparent);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.5) , transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) , transparent);
+}
+
+.boxfinalprice-div, .boxcurrentprice-div {
+	top: 8px;
+	z-index: 10;
+	position: absolute;
+	text-align: right;
+	padding-right: 5px;
+	right: 0px;
+	width: 50%;
+	border-radius: 5px;
+	background: rgba(23, 164, 24, 0.7);
+    background: -webkit-linear-gradient(right, rgba(23, 164, 24, 0.7) , transparent);
+    background: -o-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+    background: -moz-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+    background: linear-gradient(to left, rgba(23, 164, 24, 0.7) , transparent);
+}
+.ftboxcurrentprice-div {
+	top: 110px;
+	z-index: 10;
+	position: absolute;
+	text-align: right;
+	padding-right: 5px;
+	right: 30px;
+	width: 20%;
+	border-radius: 5px;
+	background: rgba(23, 164, 24, 0.7);
+	background: -webkit-linear-gradient(right, rgba(23, 164, 24, 0.7) , transparent);
+	background: -o-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+	background: -moz-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+	background: linear-gradient(to left, rgba(23, 164, 24, 0.7) , transparent);
+}
+.boxinpect-div {
+	bottom: 70px;
+	z-index: 10;
+	position: absolute;
+	text-align: left;
+	padding-left: 5px;
+}
+.boxbid-div {
+	bottom: 110px;
+	z-index: 10;
+	position: absolute;
+	text-align: left;
+	padding-left: 5px;
+}
+.boxnormprice-div {
+	bottom: 0;
+	z-index: 10;
+	position: absolute;
+	right: 0px;
+	text-align: right;
+	padding-right: 5px;
+	width: 50%;
+	border-radius: 5px;
+	background: rgba(23, 139, 164, 0.5);
+    background: -webkit-linear-gradient(right, rgba(23, 139, 164, 0.5) , transparent);
+    background: -o-linear-gradient(left, rgba(23, 139, 164, 0.5) , transparent);
+    background: -moz-linear-gradient(left, rgba(23, 139, 164, 0.5) , transparent);
+    background: linear-gradient(to left, rgba(23, 139, 164, 0.5) , transparent);
+}
+.ftboxnormprice-div {
+	bottom: 0;
+	z-index: 10;
+	position: absolute;
+	left: 0px;
+	text-align: left;
+	padding-left: 5px;
+	width: 20%;
+	border-radius: 5px;
+	background: rgba(23, 139, 164, 0.5);
+	background: -webkit-linear-gradient(left, rgba(23, 139, 164, 0.5) , transparent);
+    background: -o-linear-gradient(right, rgba(23, 139, 164, 0.5) , transparent);
+    background: -moz-linear-gradient(right, rgba(23, 139, 164, 0.5) , transparent);
+    background: linear-gradient(to right, rgba(23, 139, 164, 0.5) , transparent);
+}
+.boxfinalprice-txt, .boxcurrentprice-txt, .boxnormprice-txt, .boxtimer-txt, .boxtimer2-txt, .boxinpect-txt, .boxbid-txt, .ftboxnormprice-txt {
+	margin-top: 0px;
+	padding-left: 7px;
+	position: relative;
+}
+.boxfinalprice-num, .boxcurrentprice-num, .boxnormprice-num, .boxtimer-num, .boxtimer2-num, .ftboxnormprice-num {
+	margin-top: -15px;
+	margin-bottom: -10px;
+	padding-left: 7px;
+}
+.ftboxtimer-txt {
+	margin-top: 30px;
+	padding-right: 30px;
+	text-align: right;
+	position: relative;
+}
+.ftboxtimer-num {
+	margin-top: -15px;
+	margin-bottom: -10px;
+	padding-right: 30px;
+	text-align: right;
+}
+.ftboxbid-div, .ftboxinspect-div {
+	float: right;
+	padding-right: 30px;
+	padding-top: 12px;
+}
+.ftaucbid-txt {
+	font-size: 20px;
+}
+.ftboxitem {
+	height: 30%;
+	margin-top: -60px;
+	padding-left: 70px;
+	padding-bottom: 20px;
+}
+.current-bidder {
+	top: 68px;
+	right: 0;
+	position: absolute;
+}
+.ftcurrent-bidder {
+	bottom: 0px;
+	right: 30px;
+	position: absolute;
+}
+.boxitem {
+	z-index: -1;
+	margin: 10px;
+	width: 80%;
+}
+.boxfooter-div {
+	position: absolute;
+	border-radius: 5px;
+	height: 30px;
+	width: 100%;
+	display: block;
+	background: rgba(60, 60, 60, 0.4);
+    background: -webkit-linear-gradient(left, rgba(60, 60, 60, 0.4) , transparent);
+    background: -o-linear-gradient(right, rgba(60, 60, 60, 0.4) , transparent);
+    background: -moz-linear-gradient(right, rgba(60, 60, 60, 0.4) , transparent);
+    background: linear-gradient(to right, rgba(60, 60, 60, 0.4) , transparent);
+}
+.boxsaved-txt {
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 20px;
+	margin: 0px !important;
+	padding-left: 5px;
+}
+p.tabname {
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	max-width: 80px;
+	margin-top: 0px;
+	display: block;
+}
+.ftbox-body {
+	width: 100%;
+	position: relative;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.5);
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.5) , transparent);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.5) , transparent);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.5) , transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.5) , transparent);
+}
+div#welcomediv {
+	height: 100%;
+	width: 35%;
+}
+div#bottomhalfwelcome {
+	height: 40%;
+	position: relative;
+	padding-top: 50px;
+}
+div#howtoplaydiv {
+	height: 100%:
+	width: 100%;
+	postion: relative;
+}
+div#htp-step3div {
+	z-index: 1;
+	position: absolute;
+	border-radius: 60px;
+	width: 100%;
+	height: 100%;
+	background: rgba(60, 60, 60, 0.4);
+}
+div#htp-step2div {
+	z-index: 2;
+	position: absolute;
+	border-radius: 60px;
+	width: 67%;
+	height: 100%;
+	background: rgba(60, 60, 60, 0.4);
+}
+div#htp-step1div {
+	z-index: 3;
+	position: absolute;
+	border-radius: 60px;
+	width: 33%;
+	height: 100%;
+	background: rgba(60, 60, 60, 0.6);
+}
+span#htp-step1txt {
+	padding-left: 40%;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 25px;
+	margin-top: 30px;
+	display: block;
+}
+span#htp-step2txt {
+	padding-left: 65%;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 25px;
+	margin-top: 30px;
+	display: block;
+}
+span#htp-step3txt {
+	padding-left: 78%;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 25px;
+	margin-top: 30px;
+	display: block;
+}
+div#step1-logindiv {
+	width: 100%;
+	display: block;
+}
+a#step1-login {
+	width: 90%;
+	margin-left: 5%;
+}
+img#htp-m4a4 {
+	width: 40%;
+	display: block;
+	padding-left: 10%;
+}
+span#htp-arrow {
+	margin-top: -35px;
+	padding-left: 50%;
+	display: block;
+}
+div#step1-subtitlediv {
+	width: 100%;
+}
+div#step2-subtitlediv {
+	width: 100%;
+	float: right;
+	padding-left: 54%;
+	display: block;
+	position: relative;
+}
+div#step3-subtitlediv {
+	width: 100%;
+	float: right;
+	padding-left: 78%;
+	display: block;
+	position: relative;
+}
+span#step1-subtitle, span#step2-subtitle, span#step3-subtitle {
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 20px;
+}
+span#htp-credits {
+	margin-top: -25px;
+	padding-left: 67%;
+	display: block;
+}
+span#htp-curency {
+	margin-top: -20px;
+	padding-left: 75%;
+	display: block;
+}
+div#step2row {
+	width: 50%;
+	float: right;
+	right: 3%;
+	padding-top: 10px;
+	display: block;
+	position: relative;
+}
+img#step2-img1, img#step2-img2, img#step2-img3 {
+	width: 100%;
+}
+div#step2-img1-bidtxt, div#step2-img2-bidtxt, div#step2-img3-bidtxt {
+	height: 20px;
+	font-family: 'Nunito', sans-serif !important;
+	font-size: 10px;
+	display: block;
+	padding-top: 2px;
+	text-align: center;
+	width: 100%;
+}
+.bidbtn {
+	width: 100%;
+}
+img#step3-img {
+	width: 12%;
+	float: right;
+	padding-top: 10px;
+	right: 16%;
+	display: block;
+	position: relative;
+}
+div#step3-finalpricediv {
+	margin-top: 10px;
+	z-index: 10;
+	position: absolute;
+	right: 35px;
+	width: 10%;
+}
+div#step3-finalpricediv2 {
+	margin-top: 50%;
+	display: block;
+	position: absolute;
+	text-align: right;
+	padding-right: 5px;
+	right: 0px;
+	border-radius: 5px;
+	background: rgba(23, 164, 24, 0.7);
+	background: -webkit-linear-gradient(right, rgba(23, 164, 24, 0.7) , transparent);
+	background: -o-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+	background: -moz-linear-gradient(left, rgba(23, 164, 24, 0.7) , transparent);
+	background: linear-gradient(to left, rgba(23, 164, 24, 0.7) , transparent);
+
+}
+p#step3-finalpricetxt {
+	margin-top: 0px;
+	padding-left: 7px;
+}
+h5#step3-finalpricenum {
+	margin-top: -15px;
+	margin-bottom: -10px;
+	padding-left: 7px;
+}
+div#featuredaucContainer, div#liveaucsContainer, div#upcomingaucsContainer {
+	height: 100%;
+}
+div#ftaucdiv, div#liveaucsdiv, div#upcomingaucsdiv {
+	height: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+i#bannertoggle {
+	margin-top: -5px;
+}
+a.banndertoggle-a {
+	color: #fff !important;
+}
+img#imgtest4 {
+	width: 100%;
+}
+div#liveauc-1, div#liveauc-2, div#liveauc-3, div#liveauc-4, div#liveauc-5, div#liveauc-6 {
+
+}
+img#imgtest5, img#imgtest6, img#imgtest7, img#imgtest8, img#imgtest9, img#imgtest10 {
+	width: 80%;
+}
+
+/*footer*/
+a.footerbtn{
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+}
+img#footerline {
+	height: 1px;
+	width: 55%;
+	margin-top: 5px;
+}
+img#footer-logo {
+	height: 50px;
+	margin-top: -10px;
+}
+
+/*classes*/
+.hide {
+	visibility: none;
+}
+.show {
+	visibility: visible;
+}
+.ellipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 6; /* number of lines to show */
+   line-height: 20px;        /* fallback */
+   max-height: 120px;       /* fallback */
+}
+blockquote {
+	border-left: 5px solid #03a9f4 !important;
+}
+.chip-lblue {
+	background-color: #039be5 !important;
+	color: #fff !important;
+}
+.chip-sml {
+	height: 30px !important;
+}
+.chip-sml img {
+	height: 30px !important;
+}
+.tinyer {
+	font-size: 1.2em !important;
+}
+.currency {
+	padding-top: 2px;
+}
+.btn-box {
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
